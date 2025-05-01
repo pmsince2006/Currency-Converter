@@ -19,21 +19,28 @@ fetch('https://api.frankfurter.app/currencies')
 
 // Convert function
 function convertCurrency() {
-  const amount = document.getElementById('amount').value;
+  const amount = document.getElementById('amount').value.trim();
   const from = document.getElementById('from-currency').value;
   const to = document.getElementById('to-currency').value;
+
+  if (!amount || isNaN(amount) || amount <= 0) {
+    document.getElementById('result').innerText = 'Please enter a valid amount.';
+    return;
+  }
 
   if (from === to) {
     document.getElementById('result').innerText = `${amount} ${from} = ${amount} ${to}`;
     return;
   }
 
+  document.getElementById('result').innerText = 'Converting...';
+
   fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${from}&to=${to}`)
     .then(res => res.json())
     .then(data => {
       const rate = data.rates[to];
       document.getElementById('result').innerText =
-        `${amount} ${from} = ${rate} ${to}`;
+        `${amount} ${from} = ${rate.toFixed(2)} ${to}`;
     })
     .catch(() => {
       document.getElementById('result').innerText = 'Error fetching exchange rate.';
