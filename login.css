@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 80px; /* Prevent content from hiding under the fixed header */
 }
 
@@ -64,6 +64,7 @@ body {
   width: 100%;
   max-width: 400px;
   text-align: center;
+  margin: 2rem 0;
 }
 
 .login-container h2 {
@@ -97,4 +98,42 @@ button:hover {
 .error-message {
   color: red;
   margin-top: 1rem;
+}
+
+/* Footer Styles */
+.main-footer {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
 }
