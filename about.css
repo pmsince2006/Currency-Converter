@@ -32,9 +32,6 @@ body {
     font-weight: bold;
   }
   
-  nav ul li a.active {
-  }
-  
   /* Main Content */
   main {
     padding: 40px 20px;
