@@ -75,4 +75,9 @@ body {
     padding: 30px;
     margin-top: 120px;
   }
-  
+  .team-member img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image scales well */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
