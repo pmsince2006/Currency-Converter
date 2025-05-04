@@ -7,8 +7,8 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  background-color: #333;
-  padding: 0.5rem 80rem;
+  background-color: #106ba8;
+  padding: 0.5rem 40rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -34,7 +34,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #575757;
+  background-color: #1ca4da;
 }
 
 /* Converter Container */
@@ -42,7 +42,7 @@ body {
   background: #fff;
   padding: 2rem 3rem;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(5, 137, 253, 0.1);
   text-align: center;
   max-width: 400px;
   width: 100%;
