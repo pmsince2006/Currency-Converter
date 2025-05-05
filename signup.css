@@ -1,10 +1,11 @@
-/* Body & Background */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #f5f6f7, #67d3f7);
     margin: 0;
     padding: 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Section */
@@ -92,4 +93,27 @@ body {
     margin-top: 10px;
     color: green;
     font-size: 14px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #003f5c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #00b4db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
