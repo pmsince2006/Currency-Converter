@@ -1,83 +1,83 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f6f8;
-    color: #333;
-  }
-  
-  /* Header */
-  header {
-    background-color: #106ba8;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Main Content */
-  main {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  .about-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  #intro-text {
-    font-size: 1.1em;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .team {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .team-member {
-    text-align: center;
-    max-width: 200px;
-  }
-  
-  .team-member img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #106ba8;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    margin-top: 120px;
-  }
-  .team-member img {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    object-fit: cover; /* Ensures the image scales well */
-    border-radius: 10px; /* Optional: adds rounded corners */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #e1f7fc;  /* Lighter background color */
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #106ba8;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;  /* Increased font size */
+}
+
+#intro-text {
+  font-size: 1.2em;  /* Slightly larger font size */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Team Section */
+.team {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #106ba8;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 120px;
 }
