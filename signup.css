@@ -1,11 +1,13 @@
+/* General Body */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #f5f6f7, #67d3f7);
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Header Section */
@@ -14,25 +16,36 @@ body {
     background-color: #00b4db;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 .logo {
     font-size: 20px;
     font-weight: bold;
+    flex: 1 0 100%;
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin: 10px 15px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -42,6 +55,36 @@ body {
     color: #003f5c;
 }
 
+/* Responsive Adjustments */
+@media (min-width: 600px) {
+    .main-header {
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+        margin-bottom: 0;
+    }
+
+    .nav-links {
+        justify-content: flex-end;
+        width: auto;
+    }
+
+    .nav-links a {
+        margin: 0 0 0 20px;
+    }
+}
+
+/* Wrapper to create spacing from fixed header */
+.signup-wrapper {
+    padding-top: 100px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 /* Form Container */
 .signup-container {
     background-color: white;
@@ -49,7 +92,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    margin: 120px auto 0; /* Push content below fixed header */
+    margin-bottom: 40px;
 }
 
 /* Heading */
@@ -101,7 +144,6 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 .footer p {
