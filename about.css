@@ -1,98 +1,137 @@
-/* General Styles */
-body {
+/* General Layout */
+body, html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
+  background: linear-gradient(to right, #1f1f2e, #2d3a50);
+  color: #f0f0f0;
+  box-sizing: border-box;
 }
 
-/* Header / Navigation */
-header {
-  background-color: #007bff;
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e2a38;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.header-left h1 {
+.nav-left h1 {
   margin: 0;
-  font-size: 1.8rem;  /* Slightly larger font size */
+  font-size: 1.8rem;
+  color: #00cfff;
 }
 
-.header-right nav ul {
-  list-style: none;
-  padding: 0;
+.nav-right {
   display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
-.header-right nav ul li {
-  margin: 0;
-}
-
-.header-right nav ul li a {
-  color: white;
+.nav-btn {
+  background-color: #2a3c53;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.header-right nav ul li a:hover {
-  background-color: #1ca4da;
+.nav-btn:hover,
+.nav-btn.active {
+  background-color: #00cfff;
+  color: #001a2c;
+  transform: translateY(-2px);
 }
 
-/* Main Content */
+/* About Section */
 main {
-  padding: 40px 20px;
-  max-width: 900px;
+  padding: 4rem 2rem;
+  max-width: 1000px;
   margin: auto;
 }
 
 .about-section h2 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 2.5em;  /* Increased font size */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 #intro-text {
-  font-size: 1.2em;  /* Slightly larger font size */
-  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #d0d0d0;
+}
+
+/* Team Grid */
+.team {
   text-align: center;
 }
 
-/* Team Section */
-.team {
+.team h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00cfff;
+}
+
+.team-grid {
   display: flex;
-  gap: 40px;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
 }
 
 .team-member {
-  text-align: center;
-  max-width: 200px;
+  background-color: #2a3c53;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
 }
 
 .team-member img {
-  border-radius: 50%;
-  margin-bottom: 10px;
   width: 150px;
   height: 150px;
+  border-radius: 12px;
   object-fit: cover;
-  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.team-member h4 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.1rem;
+  color: #00cfff;
+}
+
+.team-member p {
+  font-size: 0.95rem;
+  color: #ccc;
 }
 
 /* Footer */
 footer {
-  background-color: #007bff;
-  color: white;
+  background-color: #1e2a38;
+  color: #ccc;
   text-align: center;
-  padding: 30px;
-  margin-top: 120px;
+  padding: 20px 0;
+  margin-top: auto;
 }
