@@ -7,57 +7,48 @@
   <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="home.html" class="logo">Currency Converter</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="signup.html">Signup</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Contact Form Section -->
-  <div class="container">
-    <h1>Contact Us</h1>
-    <p>If you have any questions or feedback, feel free to reach out to us using the form below.</p>
+  <!-- Header -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1>💱 Currency Converter</h1>
+    </div>
+    <div class="nav-right">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="signup.html" class="nav-btn">Signup</a>
+      <a href="contact.html" class="nav-btn active">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Contact Form -->
+  <main class="container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, suggestions, or feedback — we're here to help!</p>
     
     <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
 
       <button type="submit">Send Message</button>
     </form>
 
     <div id="formMessage"></div>
-  </div>
+  </main>
 
   <!-- Footer -->
   <footer>
-    <div class="footer-container">
-      <p>&copy; 2025 Currency Converter. All rights reserved.</p>
-      <nav>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <p>&copy; 2025 Currency Converter. All rights reserved.</p>
   </footer>
 
   <script src="contact.js"></script>
 </body>
 </html>
+
 
