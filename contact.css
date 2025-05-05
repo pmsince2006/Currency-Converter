@@ -107,19 +107,41 @@ button:hover {
   font-weight: bold;
 }
 
-/* Back Button Styles */
-a button {
-  background-color: #005f75;
+/* Footer Styles */
+footer {
+  background-color: #333;
   color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  display: block;
-  margin: 20px auto;
+  padding: 20px 0;
+  text-align: center;
 }
 
-a button:hover {
-  background-color: #003f50;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
+footer p {
+  margin: 0;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+
