@@ -1,35 +1,50 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
-  background-color: #e1f7fc;  /* Lighter background color */
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
   color: #333;
 }
 
-/* Header */
+/* Header / Navigation */
 header {
   background-color: #106ba8;
   color: white;
-  padding: 20px 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
 
-nav ul {
+.header-left h1 {
+  margin: 0;
+  font-size: 1.8rem;  /* Slightly larger font size */
+}
+
+.header-right nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
-nav ul li {
-  margin: 0 15px;
+.header-right nav ul li {
+  margin: 0;
 }
 
-nav ul li a {
+.header-right nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header-right nav ul li a:hover {
+  background-color: #1ca4da;
 }
 
 /* Main Content */
@@ -42,7 +57,7 @@ main {
 .about-section h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2em;  /* Increased font size */
+  font-size: 2.5em;  /* Increased font size */
 }
 
 #intro-text {
